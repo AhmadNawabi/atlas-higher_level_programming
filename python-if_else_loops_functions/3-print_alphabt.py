@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 for alphabet in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-    if alphabet != "Q" and alphabet != "E": 
-        print(alphabet.lower(), end="")
+    alphabet = alphabet.lower()
+    if alphabet != "e" and alphabet != "q":
+        print(alphabet.format(), end="")
