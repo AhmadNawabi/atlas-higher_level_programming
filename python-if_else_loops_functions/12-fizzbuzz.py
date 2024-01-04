@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    for number in range(1, 100):
+    for number in range(1, 101):
         result = num(number)
         print(result, end=" ")
 
