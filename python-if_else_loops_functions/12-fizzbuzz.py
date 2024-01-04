@@ -15,6 +15,3 @@ def num(n):
         return "Buzz"
     else:
         return n
-
-
-fizzbuzz()
