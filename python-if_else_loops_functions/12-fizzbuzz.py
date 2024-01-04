@@ -3,7 +3,7 @@ def fizzbuzz():
 
     for number in range(1, 101):
         result = num(number)
-        print(result, end=" ")
+        print("{} ".format(result), end="")
 
 
 def num(n):
