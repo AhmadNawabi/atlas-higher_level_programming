@@ -7,4 +7,4 @@ def uppercase(str):
     print()
 
 
-uppercase()
+uppercase("holberton")
