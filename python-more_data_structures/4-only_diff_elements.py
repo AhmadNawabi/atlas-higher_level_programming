@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 
 def only_diff_elements(set_1, set_2):
-
-    onlyOneSet = set()
+    common_elements = set()
 
     for element in set_1:
-        onlyOneSet.add(element)
-        for element in set_2:
-            onlyOneSet.add(element)
-
-    return onlyOneSet
+        if element != set_2:
+            common_elements.add(element)
+            for other_element in set_2:
+                common_elements.add(other_element)
+    return common_elements
