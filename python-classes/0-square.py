@@ -16,7 +16,10 @@ Attributes:
 Methods:
     No methods are defined in this empty class.
 """
+
+
 class Square:
+
     """
     This class represents a square.
 
