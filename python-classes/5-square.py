@@ -108,14 +108,14 @@ class Square:
             printing '#' characters to represent
             the shape. Each row is printed
             on a new line.
-                Example:
-                    square_instance = Square(3)
-                    square_instance.my_print()
+            Example:
+            square_instance = Square(3)
+            square_instance.my_print()
 
-                    Output:
-                    ###
-                    ###
-                    ###
+            Output:
+            ###
+            ###
+            ###
             '''
             for width  in range(self.__size):
                 print("#", end="")
