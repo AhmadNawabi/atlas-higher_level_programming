@@ -23,7 +23,7 @@ class Square:
         square_instance = Square(5)
 
     Note:
-        The size attribute (__size) is marked as 
+        The size attribute (__size) is marked as
         private with a double underscore.
     """
 
