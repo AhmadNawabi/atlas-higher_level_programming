@@ -100,26 +100,29 @@ class Square:
     def my_print(self):
         """
         Prints a representation of the square using '#' characters.
-
-        This method iterates through the rows and columns of the square,
-        printing '#' characters to represent the shape. Each row is printed
-        on a new line.
-
-        Example:
-            square_instance = Square(3)
-            square_instance.my_print()
-
-            Output:
-            ###
-            ###
-            ###
-
-        Note:
-            If the size of the square is 0, an empty line is printed.
         """
         for height in range(self.__size):
+            '''
+            This method iterates through
+            the rows and columns of the square,
+            printing '#' characters to represent
+            the shape. Each row is printed
+            on a new line.
+                Example:
+                    square_instance = Square(3)
+                    square_instance.my_print()
+
+                    Output:
+                    ###
+                    ###
+                    ###
+            '''
             for width  in range(self.__size):
                 print("#", end="")
             print()
+            '''
+            Note:
+            If the size of the square is 0, an empty line is printed.
+            '''
         if self.__size == 0:
             print()
