@@ -29,7 +29,8 @@ class Square:
 
     def __init__(self, size=0):
         """
-            Initializes a new instance of the Square class with a specified size.
+            Initializes a new instance of the Square
+            class with a specified size.
 
             Parameters:
             size (int): The size of the square.
@@ -120,7 +121,6 @@ class Square:
         Note:
             If the size of the square is 0, an empty line is printed.
         """
-
         for height in range(self.__size):
             for width  in range(self.__size):
                 print("#", end="")
