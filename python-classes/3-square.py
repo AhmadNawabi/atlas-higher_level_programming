@@ -1,4 +1,5 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
+
 '''
 This module create a square class
 '''
