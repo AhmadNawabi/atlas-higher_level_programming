@@ -117,7 +117,7 @@ class Square:
             ###
             ###
             '''
-            for width  in range(self.__size):
+            for width in range(self.__size):
                 print("#", end="")
             print()
             '''
