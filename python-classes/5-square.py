@@ -5,7 +5,6 @@ This module create a square class
 
 
 class Square:
-
     """
        This class represents a square.
 
@@ -36,14 +35,12 @@ class Square:
             size (int): The size of the square.
         """
         self.__size = size
-
         if not isinstance(self.__size, int):
             '''
             Attribute size must be an integer
             Otherwise raises an exception "size must be an integer"
             '''
             raise TypeError("size must be an integer")
-
         if self.__size < 0:
             '''
             Attribute size must be greater than 0
@@ -78,7 +75,6 @@ class Square:
             self.__size = 1000
         else:
             self.__size = value
-
         if not isinstance(value, int):
             '''
             Attribute size must be an integer
