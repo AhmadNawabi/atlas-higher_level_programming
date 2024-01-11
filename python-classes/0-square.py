@@ -3,7 +3,8 @@
 """
 This module defines a Square class.
 
-The Square class represents a square geometric shape. It is a simple implementation
+The Square class represents a square geometric shape.
+It is a simple implementation
 with no specific attributes or methods defined.
 
 Example:
