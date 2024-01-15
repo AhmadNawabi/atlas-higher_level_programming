@@ -3,10 +3,17 @@
 
 
 class Rectangle:
+    """This class represents a rectangle"""
+    """And number of rectangle attributes in this class"""
+    number_of_instances = 0
+    """print_symbol is used to print any symbol on the screen"""
+    print_symbol = "#"
     """Initialize a rectangular object"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        """Add a rectangle attribute to this class"""
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -42,6 +49,21 @@ class Rectangle:
         else:
             self.__height = value
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Check if two rectangles are equal
+         and is instance of Rectangle class"""
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() > rect_2.area():
+            return rect_1
+        elif rect_1.area() < rect_2.area():
+            return rect_2
+        else:
+            return rect_1
+
     def area(self):
         """Calculate the area of the rectangle"""
         return self.__width * self.height
@@ -61,7 +83,7 @@ class Rectangle:
         """Iterate through the width and height of the rectangle
             and print the result as a string with the (#) character"""
         for i in range(self.__height):
-            result += "#" * self.__width
+            result += str(self.print_symbol) * self.__width
             if i < self.__height - 1:
                 result += "\n"
         return result
@@ -71,4 +93,7 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
+        """Delete the rectangle from the class"""
         print("Bye rectangle...")
+        """remove the rectangle from the class"""
+        Rectangle.number_of_instances -= 1
