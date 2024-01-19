@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-Return a list of attributes and methods of the given object.
+This module provides a function for looking up attributes and methods of objects.
 """
-
 
 def lookup(obj):
     """
@@ -17,12 +16,12 @@ def lookup(obj):
     methods that start with '__'.
 
     Example:
-    class ExampleClass:
+     class ExampleClass:
          def __init__(self, name):
              self.name = name
 
          def greet(self):
-            print(f"Hello, {self.name}!")
+             print(f"Hello, {self.name}!")
 
     instance = ExampleClass("John")
     lookup(instance)
