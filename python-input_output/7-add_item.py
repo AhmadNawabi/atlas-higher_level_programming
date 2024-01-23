@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""This module creates a script that adds args to Python list and saves them"""
+"""
+This module creates a script that adds args to Python
+list and saves them
+"""
+
 
 from os import path
 from sys import argv
