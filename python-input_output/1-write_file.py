@@ -3,6 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """Writes content to the file named filename."""
+    """Writes content to the file named text."""
     with open(filename, "w", encoding="utf-8") as file:
-        print(len(text), file=file, end="")
+        file.write(text)
+        return len(text)
