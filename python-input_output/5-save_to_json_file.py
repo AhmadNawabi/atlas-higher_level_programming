@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+Import required modules from json
+"""
 import json
 """
-Writes the JSON representation of the object to a text file.
+Writes the JSON representation of the
+object to a text file.
 """
 
 
@@ -14,4 +18,4 @@ def save_to_json_file(my_obj, filename):
     """
     with open(filename, 'w') as file:
         json.dump(my_obj, file)
-    return True
+    return file
