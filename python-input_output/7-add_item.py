@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Module ´´9-add_item´´ adds all arguments to a Python list, and then save
-them the add_item.json file"""
-
-
+"""
+Module ´´9-add_item´´ adds all arguments to a Python list, and then save
+them the add_item.json file
+"""
 import json
 import sys
 import os
