@@ -1,22 +1,31 @@
 #!/usr/bin/python3
-"""
-Module ´´9-add_item´´ adds all arguments to a Python list, and then save
-them the add_item.json file
-"""
-import json
+"""Load, add, save"""
+
+
 import sys
-import os
+from save_to_json_file import save_to_json_file
+from load_from_json_file import load_from_json_file
 
-save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+def add_items_to_list_and_save(arguments):
+    try:
+        """Load existing items from file"""
+        items = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        """If file doesn't exist, create an empty list"""
+        items = []
 
-filename = "add_item.json"
-new_list = []
+    """Add new arguments to the list"""
+    items.extend(arguments)
 
-if os.path.exists(filename):
-    new_list = load_from_json_file(filename)
+    """Save the updated list to the file"""
+    save_to_json_file(items, "add_item.json")
 
-for argum in sys.argv[1:]:
-    new_list.append(argum)
+if __name__ == "__main__":
+    """Get command-line arguments excluding the script name"""
+    arguments = sys.argv[1:]
 
-save_to_json_file(new_list, filename)
+    if arguments:
+        add_items_to_list_and_save(arguments)
+        print("Items added successfully and saved to add_item.json.")
+    else:
+        print("No items provided.")
