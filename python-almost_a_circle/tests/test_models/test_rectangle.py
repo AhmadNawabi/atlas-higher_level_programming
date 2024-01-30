@@ -121,7 +121,15 @@ class TestRectangleInstantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             Rectangle(10, 2, 1, 1, 12, 5)
 
+    def test_display_without_x_and_y_exists(self):
+        r = Rectangle(2, 3, 4, 5, 6)
+        with self.assertRaises(AttributeError):
+            r.display()
+
+    def test_rectangle_0_2_exists(self):
+        r = Rectangle(0, 2)
+        self.assertIsInstance(r, Rectangle)
+
 
 if __name__ == "__main__":
     unittest.main()
-
