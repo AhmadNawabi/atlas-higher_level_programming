@@ -53,6 +53,14 @@ class Rectangle(Base):
         return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id, self.x,
                                                        self.y, self.width,
                                                        self.height)
+    
+    def display(self):
+        """Display the rectangle."""
+        for _ in range(self.y):
+            print()
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
+
 
     @property
     def width(self):
