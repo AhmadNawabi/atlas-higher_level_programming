@@ -1,3 +1,4 @@
-SQL
-
-SQL for atlas higher level programming 
+--This is a beginning SQL script
+--These are comments. Any line that begins with two 
+--  dashes is a comment line,
+--  and is not part of the processed SQL statements.
