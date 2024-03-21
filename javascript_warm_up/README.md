@@ -49,3 +49,4 @@ If you have any improvements or additional exercises you'd like to add to this p
 ## Acknowledgements
 
 This project was inspired by the need for simple, yet effective JavaScript practice exercises. Special thanks to all contributors who have helped improve and expand this project over time.
+
