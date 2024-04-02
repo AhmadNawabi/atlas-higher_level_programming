@@ -1,2 +1,3 @@
-// Update the text color of <header> using jquery
+const $ = window.$;
+
 $('header').css('color', '#FF0000');
